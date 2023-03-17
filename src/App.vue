@@ -2,18 +2,18 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-09 17:13:20
- * @LastEditTime: 2023-03-09 17:18:56
+ * @LastEditTime: 2023-03-17 18:01:21
  * @LastEditors: Liu Yang
- * @FilePath: \my-vue-app\src\App.vue
+ * @FilePath: \vue3\src\App.vue
 -->
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 </script>
-
 <template>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
+      2
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />

@@ -1,6 +1,6 @@
 <template>
   <div class="m-4 dark">
-    <p>vite+vue3+ts</p>
+    <p>vite + vue 3 + ts</p>
     <div class="title">vite+vue3+ts</div>
     <el-cascader v-model="value" :options="options" @change="handleChange" />
   </div>
@@ -9,13 +9,10 @@
     <el-cascader v-model="value" :options="options" :props="props" @change="handleChange" />
   </div>
   <el-switch v-model="value1" @change="toggleDark()" />
-
   <button :disabled="value1">Button</button>
 </template>
-
 <script lang="ts" setup>
 import { ref, reactive } from 'vue'
-import type { Ref } from 'vue'
 import { useDark, useToggle } from '@vueuse/core'
 
 const state = reactive({ count: 0 })
@@ -51,7 +48,7 @@ console.log(import.meta.env.VITE_VUE_APP_API, import.meta.env.MODE);
 // 将无法跟踪 state.count 的变化
 
 
-let value1 = ref(false)
+let value1 = ref(true)
 
 const isDark = useDark({
   onChanged(dark: boolean) {
@@ -343,5 +340,9 @@ const options = [
 </script>
 
 <style lang="scss" scoped>
-.title {}
+.title {
+  position: absolute;
+  top: 10px;
+  width: 100px;
+}
 </style>

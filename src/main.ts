@@ -2,12 +2,11 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-09 17:13:20
- * @LastEditTime: 2023-03-17 13:58:07
+ * @LastEditTime: 2023-03-17 17:29:56
  * @LastEditors: Liu Yang
- * @FilePath: \test\src\main.ts
+ * @FilePath: \vue3\src\main.ts
  */
 import { createApp } from 'vue'
-
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import 'element-plus/theme-chalk/dark/css-vars.css'
