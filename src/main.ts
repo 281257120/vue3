@@ -2,7 +2,7 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-09 17:13:20
- * @LastEditTime: 2023-03-17 17:29:56
+ * @LastEditTime: 2023-03-20 10:48:21
  * @LastEditors: Liu Yang
  * @FilePath: \vue3\src\main.ts
  */
@@ -16,11 +16,18 @@ import '@/assets/style/index.scss'
 
 
 import App from './App.vue'
+import { setupRouter } from './router'
+import { setupStore } from './store'
+
 const app = createApp(App)
 app.use(ElementPlus, {
   locale: zhCn,
   size: 'small',
 })
+// 安装初始化store
+setupStore(app)
+// 安装初始化路由
+setupRouter(app)
 app.mount('#app')
 
 

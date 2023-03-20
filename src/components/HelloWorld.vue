@@ -1,19 +1,23 @@
 <template>
-  <div class="m-4 dark">
-    <p>vite + vue 3 + ts</p>
-    <div class="title">vite+vue3+ts</div>
-    <el-cascader v-model="value" :options="options" @change="handleChange" />
-  </div>
-  <div class="m-4">
-    <!-- <p>Child options expand when hovered11</p> -->
-    <el-cascader v-model="value" :options="options" :props="props" @change="handleChange" />
-  </div>
-  <el-switch v-model="value1" @change="toggleDark()" />
+  {{ homeStore.title }}
+  <h1>vite + vue 3 + ts模板</h1>
+  <h1>userStore: {{ userStore.userInfo.userName }}</h1>
+  <el-cascader v-model="value" :options="options" :props="props" @change="handleChange" />
+  <el-switch v-model="value1" @change="toggleDark()" />暗黑模式
   <button :disabled="value1">Button</button>
 </template>
 <script lang="ts" setup>
 import { ref, reactive } from 'vue'
 import { useDark, useToggle } from '@vueuse/core'
+
+import useUserStore from '@/store/modules/user'
+import useHomeStore from '@/store/modules/home'
+const userStore = useUserStore()
+const homeStore = useHomeStore()
+userStore.changeUserName({
+  userName: 'pinia使用',
+  userId: 123
+})
 
 const state = reactive({ count: 0 })
 
@@ -40,7 +44,6 @@ let { count } = state
 count++
 
 console.log(count, state.count)
-
 console.log(import.meta.env.VITE_VUE_APP_API, import.meta.env.MODE);
 
 

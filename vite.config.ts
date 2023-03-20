@@ -2,9 +2,9 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-14 13:59:27
- * @LastEditTime: 2023-03-17 09:59:58
+ * @LastEditTime: 2023-03-20 11:11:57
  * @LastEditors: Liu Yang
- * @FilePath: \test\vite.config.ts
+ * @FilePath: \vue3\vite.config.ts
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -15,6 +15,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
+      '#': resolve(__dirname, './src/types'),
+      utils: resolve(__dirname, './src/utils'),
+      api: resolve(__dirname, './src/api')
       // '@api': resolve(__dirname, './src/api'),
       // '@assets': resolve(__dirname, './src/assets'),
       // '@common': resolve(__dirname, './src/common'),

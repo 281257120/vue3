@@ -10,12 +10,15 @@
     "develop": "vite --mode develop",
     "production": "vite --mode production",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
-     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\""
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\""
   },
   "dependencies": {
     "@vueuse/core": "^9.13.0",
+    "axios": "^1.3.4",
     "element-plus": "^2.2.36",
-    "vue": "^3.2.45"
+    "pinia": "^2.0.33",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.55.0",
