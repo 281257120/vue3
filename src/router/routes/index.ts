@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Liu Yang
  * @Date: 2023-03-20 10:34:54
- * @LastEditTime: 2023-03-20 10:35:33
+ * @LastEditTime: 2023-03-20 13:49:00
  * @LastEditors: Liu Yang
  * @FilePath: \vue3\src\router\routes\index.ts
  */
@@ -10,7 +10,7 @@ import type { RouteRecordRaw } from 'vue-router'
 
 // 获取modules中的路由规则
 // https://cn.vitejs.dev/guide/features.html#glob-import
-const modules = import.meta.globEager('./modules/**/*.ts')
+const modules = import.meta.globEager<any>('./modules/**/*.ts')
 
 // modules routes
 const routes: RouteRecordRaw[] = []

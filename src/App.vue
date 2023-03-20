@@ -2,28 +2,32 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-09 17:13:20
- * @LastEditTime: 2023-03-17 18:01:21
+ * @LastEditTime: 2023-03-20 18:17:47
  * @LastEditors: Liu Yang
  * @FilePath: \vue3\src\App.vue
 -->
 
 <template>
-  <router-view />
+  <router-view class="mWrapper" :class="{ 'isDark': settingStore.isDark }" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script lang="ts" setup>
+import useSettingStore from '@/store/modules/setting'
+const settingStore = useSettingStore()
+
+</script>
+
+<style lang="scss" scoped>
+.mWrapper {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  position: relative;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.isDark {
+  background-image: url('/images/bg-mask.png');
 }
 </style>

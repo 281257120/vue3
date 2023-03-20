@@ -2,10 +2,12 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-09 17:13:20
- * @LastEditTime: 2023-03-20 10:48:21
+ * @LastEditTime: 2023-03-20 15:38:01
  * @LastEditors: Liu Yang
  * @FilePath: \vue3\src\main.ts
  */
+// 计算设置rem的基准值，即html的font-size
+import 'amfe-flexible'
 import { createApp } from 'vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
