@@ -2,7 +2,7 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-14 13:59:27
- * @LastEditTime: 2023-03-20 16:55:20
+ * @LastEditTime: 2023-03-21 17:59:03
  * @LastEditors: Liu Yang
  * @FilePath: \vue3\vite.config.ts
  */
@@ -36,29 +36,28 @@ export default ({ mode }) => {
     //   ]
     // }
     // },
-
-    // server: {
-    //   host: '0.0.0.0',
-    //   https: false,
-    //   port: 3000,
-    //   proxy: {
-    //     '/traffictile': {
-    //       target: 'https://tm.amap.com/trafficengine/mapabc/traffictile',
-    //       changeOrigin: true,
-    //       rewrite: path => path.replace(/^\/traffictile/, '/')
-    //     },
-    //     '/v3': {
-    //       target: 'https://restapi.amap.com/v3',
-    //       changeOrigin: true,
-    //       rewrite: path => path.replace(/^\/v3/, '/')
-    //     },
-    //     '/geoserver': {
-    //       target: 'http://47.111.68.226:8080/geoserver',
-    //       changeOrigin: true,
-    //       rewrite: path => path.replace(/^\/geoserver/, '/')
-    //     }
-    //   }
-    // },
+    server: {
+      host: '0.0.0.0',
+      https: false,
+      port: 3000,
+      proxy: {
+        '/traffictile': {
+          target: 'https://tm.amap.com/trafficengine/mapabc/traffictile',
+          changeOrigin: true,
+          rewrite: path => path.replace(/^\/traffictile/, '/')
+        },
+        '/v3': {
+          target: 'https://restapi.amap.com/v3',
+          changeOrigin: true,
+          rewrite: path => path.replace(/^\/v3/, '/')
+        },
+        '/geoserver': {
+          target: 'http://47.111.68.226:8080/geoserver',
+          changeOrigin: true,
+          rewrite: path => path.replace(/^\/geoserver/, '/')
+        }
+      }
+    },
     // define: {
     //   __APP_VERSION__: JSON.stringify(packageJson.version)
     // }

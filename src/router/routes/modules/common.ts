@@ -18,13 +18,11 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/home',
         name: 'home',
-        allName: '首页',
         component: () => import('@/views/HomePage.vue'),
       },
       {
         path: '/vuecesium',
         name: 'vuecesium',
-        allName: 'VueCesium应用',
         component: () => import('@/views/VueCesium.vue'),
       },
     ]

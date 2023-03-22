@@ -22,6 +22,6 @@
       "api/*": ["src/api/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*", "node_modules/vue-cesium/Cesium.d.ts", "node_modules/vue-cesium/global.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

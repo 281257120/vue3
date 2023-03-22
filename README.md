@@ -8,6 +8,7 @@
 
 推荐使用node16+版本，本模板（v16.17.1）。
 
+
 ## 开发 IDE
 
 - [VSCode](https://code.visualstudio.com/)
@@ -20,6 +21,7 @@
 - 封装了 axios 和请求模拟
 - 代码提交规范
 - 暗黑模式
+- 集成VueCesium
 
 ## 安装
 

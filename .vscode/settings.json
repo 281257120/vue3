@@ -1,0 +1,22 @@
+{
+  // 开启自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+    // 保存的时候自动格式化
+    "editor.formatOnSave": true,
+    // 默认格式化工具选择prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    //头部注释
+  "fileheader.customMade": {
+    "Description": "", //文件内容描述
+    "Author": "Liu Yang", //编辑人
+    "Date": "Do not edit", //时间
+    "LastEditTime": "Do not edit",
+    "LastEditors": "Liu Yang",
+    "FilePath": "Do not edit"
+  },
+  "stylelint.validate": ["css", "less", "scss", "vue", "html"],
+}
