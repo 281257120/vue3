@@ -1,3 +1,11 @@
+/*
+ * @Author: zouyaoji@https://github.com/zouyaoji
+ * @Date: 2021-12-14 16:14:27
+ * @LastEditTime: 2023-03-23 10:54:00
+ * @LastEditors: Liu Yang
+ * @Description: prettier 代码格式配置文件
+ * @FilePath: \vue3\.prettierrc.js
+ */
 module.exports = {
   printWidth: 120, // 一行的字符数，如果超过会进行换行，默认为80
   tabWidth: 2, // 一个tab代表几个空格数，默认为80
@@ -11,4 +19,4 @@ module.exports = {
   bracketSpacing: true,
   jsxBracketSameLine: true,
   eslintIntegration: true
-} 
+}

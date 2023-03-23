@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Liu Yang
  * @Date: 2023-03-20 10:49:20
- * @LastEditTime: 2023-03-20 17:56:48
+ * @LastEditTime: 2023-03-23 10:25:01
  * @LastEditors: Liu Yang
  * @FilePath: \vue3\src\store\modules\setting.ts
  */

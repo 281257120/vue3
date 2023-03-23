@@ -2,7 +2,7 @@
  * @Description: daimai
  * @Author: Liu Yang
  * @Date: 2023-03-14 13:59:27
- * @LastEditTime: 2023-03-21 17:59:03
+ * @LastEditTime: 2023-03-22 17:57:25
  * @LastEditors: Liu Yang
  * @FilePath: \vue3\vite.config.ts
  */
@@ -39,7 +39,7 @@ export default ({ mode }) => {
     server: {
       host: '0.0.0.0',
       https: false,
-      port: 3000,
+      port: 4000,
       proxy: {
         '/traffictile': {
           target: 'https://tm.amap.com/trafficengine/mapabc/traffictile',

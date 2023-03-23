@@ -1,0 +1,12 @@
+//推荐安装插件
+{
+  "recommendations": [
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "obkoro1.korofileheader",
+    "donjayamanne.githistory",
+    "eamodio.gitlens"
+  ]
+}

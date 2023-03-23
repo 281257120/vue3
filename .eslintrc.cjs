@@ -1,7 +1,7 @@
 /*
  * @Author: zouyaoji@https://github.com/zouyaoji
  * @Date: 2021-08-26 17:00:08
- * @LastEditTime: 2023-03-21 18:37:07
+ * @LastEditTime: 2023-03-23 11:02:15
  * @LastEditors: Liu Yang
  * @Description: eslint 代码质量配置文件
  * @FilePath: \vue3\.eslintrc.cjs
@@ -38,7 +38,8 @@ module.exports = {
 
     // https://github.com/prettier/eslint-config-prettier#installation
     // usage with Prettier, provided by 'eslint-config-prettier'.
-    'prettier'
+    // 'prettier',
+    'plugin:prettier/recommended' 
   ],
   plugins: [
     // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-file
