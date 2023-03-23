@@ -2,7 +2,7 @@
 * @Description:
 * @Author: Liu Yang
 * @Date: 2023-03-17 14:02:49
- * @LastEditTime: 2023-03-23 11:25:16
+ * @LastEditTime: 2023-03-23 11:39:45
  * @LastEditors: Liu Yang
 -->
 <template>
@@ -65,7 +65,7 @@
         </vc-layer-imagery>
       </vc-viewer>
     </vc-config-provider>
-    <div class="position">
+    <div class="position animated animate__backInLeft">
       <el-switch v-model="clusterSch" active-text="聚合方案2" inactive-text="聚合方案1"></el-switch>
       <el-switch v-model="shade" active-text="遮罩" inactive-text=""></el-switch>
     </div>

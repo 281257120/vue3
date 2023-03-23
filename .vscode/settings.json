@@ -18,6 +18,15 @@
     "LastEditors": "Liu Yang",
     "FilePath": "Do not edit"
   },
-  "stylelint.validate": ["css", "less", "scss", "vue", "html"],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss",
+    "vue",
+    "html"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
 
 }
