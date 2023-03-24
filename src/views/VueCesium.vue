@@ -2,7 +2,7 @@
 * @Description:
 * @Author: Liu Yang
 * @Date: 2023-03-17 14:02:49
- * @LastEditTime: 2023-03-23 11:39:45
+ * @LastEditTime: 2023-03-24 09:49:26
  * @LastEditors: Liu Yang
 -->
 <template>
@@ -11,14 +11,12 @@
       <vc-viewer sceneModePicker :showCredit="false" ref="viewerRef" @ready="onViewerReady" :timeline="false">
         <!-- 覆盖物 -->
         <vc-overlay-html ref="html" :skyBox="false" :position="[117.186419, 45.66446, 20]" :show="true">
-          <div class="vc-box mVcBox">
-            aa
-          </div>
+          <div class="vc-box mVcBox">aa</div>
         </vc-overlay-html>
         <vc-overlay-html :position:any="{ lng: 104.04, lat: 30.40 }">
           <div class="label-container label-container-var">
             <div class="label-animate-marker_border">
-              <span class="label-animate-marker_text">北京欢迎您</span>
+              <span class="label-animate-marker_text">北京欢迎2您</span>
             </div>
           </div>
         </vc-overlay-html>
@@ -65,7 +63,7 @@
         </vc-layer-imagery>
       </vc-viewer>
     </vc-config-provider>
-    <div class="position animated animate__backInLeft">
+    <div class="position animate__animated animate__backInLeft">
       <el-switch v-model="clusterSch" active-text="聚合方案2" inactive-text="聚合方案1"></el-switch>
       <el-switch v-model="shade" active-text="遮罩" inactive-text=""></el-switch>
     </div>
